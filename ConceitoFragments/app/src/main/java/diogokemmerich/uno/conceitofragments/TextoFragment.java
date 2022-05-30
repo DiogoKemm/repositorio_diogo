@@ -32,4 +32,10 @@ public class TextoFragment extends Fragment {
 
        return textInflated;
     }
+
+    public void trocarPropriedadesDoTexto(int tamanhoFonte, String texto) {
+        tvDigite.setTextSize(tamanhoFonte);
+        tvDigite.setText(texto);
+
+    }
 }

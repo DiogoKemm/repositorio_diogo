@@ -9,11 +9,16 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends FragmentActivity implements ToolBarFragment.ToolbarListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void onButtonClick(int tamanhoFonte, String texto) {
+        TextoFragment fragmento = (TextoFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_texto);
+        fragmento.trocarPropriedadesDoTexto(tamanhoFonte, texto);
     }
 }

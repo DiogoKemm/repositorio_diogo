@@ -25,8 +25,8 @@ public class ToolBarFragment extends Fragment implements SeekBar.OnSeekBarChange
     private EditText edtInformarTexto;
     private SeekBar skbFormatarTexto;
     private Button btnAlterarTexto;
-    private ToolbarListener ToolbarListener;
-    private static int TextSize = 10;
+    private ToolbarListener toolbarListener;
+    private static int textSize = 10;
 
     public interface ToolbarListener {
         public void onButtonClick(int position, String texto);
@@ -66,7 +66,7 @@ public class ToolBarFragment extends Fragment implements SeekBar.OnSeekBarChange
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
-            ToolbarListener = (ToolbarListener) context;
+            toolbarListener = (ToolbarListener) context;
         } catch(ClassCastException e) {
             throw new ClassCastException(context.toString()
                 + "Obrigatório implementar a interface ToolbarListener");
@@ -74,13 +74,13 @@ public class ToolBarFragment extends Fragment implements SeekBar.OnSeekBarChange
     }
 
     public void buttonClicked(View view) {
-        ToolbarListener.onButtonClick(TextSize, edtInformarTexto.getText().toString());
+        toolbarListener.onButtonClick(textSize, edtInformarTexto.getText().toString());
     }
 
 
     @Override
-    public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        textSize = progress;
     }
 
     @Override
