@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Calcular</string>
+    <string name="selecione_a_opera_o_matem_tica">Selecione a operação matemática</string>
+    <string name="soma">Soma</string>
 </resources>
