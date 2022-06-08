@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="diogokemmerich.uno.calcular">
+    package="ramos.s.j.mauricio.uno.calcular">
 
     <application
         android:allowBackup="true"
