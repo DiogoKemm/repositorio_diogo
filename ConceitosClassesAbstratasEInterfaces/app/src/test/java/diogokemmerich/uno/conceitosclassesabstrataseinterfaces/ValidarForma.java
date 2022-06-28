@@ -1,5 +1,4 @@
 package diogokemmerich.uno.conceitosclassesabstrataseinterfaces;
 
-public class ValidarTriangulo {
-
+public class ValidarForma {
 }
