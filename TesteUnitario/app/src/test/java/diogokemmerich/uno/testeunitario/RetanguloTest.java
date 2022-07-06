@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import diogokemmerich.uno.testeunitario.forma.Retangulo;
 
-
 public class RetanguloTest {
     public static Retangulo retangulo = new Retangulo();
 

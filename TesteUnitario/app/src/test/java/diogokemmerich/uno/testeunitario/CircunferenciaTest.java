@@ -21,7 +21,6 @@ public class CircunferenciaTest {
     }
     @Test
     public void deveriaCalcularAreaDaCircunferencia(){
-        //O cálculo da área de uma circunferência é dada pela fórmula: A = PI * Raio ao quadrado
         int PRECISAO_4_CASAS_DECIMAIS = 4;
 
         double area_raio3             = 28.2743;

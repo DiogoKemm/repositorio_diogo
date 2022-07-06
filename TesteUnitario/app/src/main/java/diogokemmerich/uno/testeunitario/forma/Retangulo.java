@@ -9,11 +9,6 @@ public class Retangulo extends Forma{
         super(TAMANHO_ARRAY_INFO_CALCULO_AREA);
     }
 
-    /*public int getTamanhoArrayInfoCalculoArea(){
-
-        return TAMANHO_ARRAY_INFO_CALCULO_AREA;
-    }*/
-
     public double calcularPerimetro(){
         double perimetro = 2 * (getMedida(POSICAO_ZERO_BASE) + getMedida(POSICAO_UM_ALTUA));
 

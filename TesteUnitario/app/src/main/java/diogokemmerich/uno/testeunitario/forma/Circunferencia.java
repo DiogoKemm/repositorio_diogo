@@ -5,13 +5,6 @@ public class Circunferencia extends Forma {
     public static final int POSICAO_ZERO                     = 0;
     public static final int EXPOENTE_2                       = 2;
 
-
-
-    /*public Circunferencia(int numMedidas) {
-
-        super(numMedidas);
-    }*/
-
     public Circunferencia(){
         super(TAMANHO_ARRAY_INFO_CALCULO_AREA);
     }

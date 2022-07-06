@@ -41,8 +41,6 @@ public class MainActivity extends FragmentActivity implements AdapterView.OnItem
         spiOpcoes.setOnItemSelectedListener(this);
 
         fragmentManager = getSupportFragmentManager();
-
-
     }
 
     @Override
