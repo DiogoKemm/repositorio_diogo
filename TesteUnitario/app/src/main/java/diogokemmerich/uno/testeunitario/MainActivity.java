@@ -1,4 +1,4 @@
-package diogokemmerich.uno.tddtesteunitrio;
+package diogokemmerich.uno.testeunitario;
 
 import androidx.appcompat.app.AppCompatActivity;
 

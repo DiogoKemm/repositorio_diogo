@@ -1,4 +1,4 @@
-package diogokemmerich.uno.tddtesteunitrio;
+package diogokemmerich.uno.testeunitario;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("diogokemmerich.uno.tddtesteunitrio", appContext.getPackageName());
+        assertEquals("diogokemmerich.uno.testeunitario", appContext.getPackageName());
     }
 }
