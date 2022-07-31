@@ -1,0 +1,56 @@
+library(ggplot2)
+
+#data.frame peso
+peso <- data.frame(
+sexo=factor(rep(c("F", "M"), each=200)), 
+peso=round(c(rnorm(200, mean=55, sd=5),
+                 rnorm(200, mean=65, sd=5)))
+  )
+#
+
+
+#(Área)
+pesoPlot <- ggplot(peso, aes(x=peso, fill=sexo))+ 
+geom_area(stat ="bin")+
+labs(title="Contagem de pessoas e seus pesos, agrupadas por sexo",
+x = "Peso",
+y = "Contagem")
+print(pesoPlot)
+#
+
+#(Densidade e histograma)
+pesoDensidade <- ggplot(peso, aes(x=peso, color=sexo, fill=sexo)) + 
+ geom_histogram(aes(y=..density..), alpha=0.5, 
+                position="identity")+
+ geom_density(alpha=.2) +
+labs(title="Contagem de pessoas e seus pesos, agrupadas por sexo",
+x = "Peso",
+y = "Densidade")
+print(pesoDensidade)
+#
+
+#dataframe refeições
+refeicoes <- data.frame(refeicao=c("Café da manhã", "Almoço", "Jantar"),
+conta=c(10, 30, 15))
+head(refeicoes)
+#
+
+#(Pontos)
+refeicoesPlot <- ggplot(refeicoes, aes(x=refeicao, y=conta, group=1)) +
+  geom_line()+
+  geom_point()+
+labs(title="Custo de três refeições diárias em Chapecó (em R$)",
+x = "Refeição",
+y = "Valor")
+print(refeicoesPlot)
+#
+
+
+ 
+
+
+
+
+
+
+
