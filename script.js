@@ -20,26 +20,6 @@ function valorFinal() {
     document.getElementById('valorFinal').innerHTML = Math.round(preco * quantidade);
 }
 
-function cobaias() {
-    let i;
-    let cobaias = 0;
-    let coelhos;
-    let ratos;
-    for (i = 0; i < 15; i++) {
-        cobaias = prompt("Insira um valor: ")
-        cobaias += parseInt(cobaias);
-        if (i % 2 == 0){
-            coelhos += cobaias; 
-        } else {
-            ratos += cobaias;
-        }
-    }
-
-    return cobaias;
-}
-
-console.log(cobaias());
-
 function quadrado() {
     let i;
     let teste;
