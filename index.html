@@ -2,15 +2,23 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmula binomial</title>
-    <script src="binomial.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <form action="">
-        <input type="number" name="n" id="n">
-        <input type="number" name="x" id="x">
-        <input type="number" name="p" id="p" step="0.1">
-        <input type="button" value="Calcular" id="calcular" onclick="formulaBinomial()">
+        <div>
+            <label for="codigo">Insira o código do produto que você quer comprar: </label>
+            <input type="number" name="codigo" id="codigo" min="100" max="105">
+        </div>
+        <div>
+            <label for="quantidade">Insira a quantidade: </label>
+            <input type="number" name="quantidade" id="quantidade" min="0">
+        </div>
+        <input type="button" value="Enviar" onclick="valorFinal()">
     </form>
+    <p>Valor final: R$ <span id="valorFinal"></span></p>
+    <br>
+    <p>Total de cobaias utilizadas: <span></span><br>Total de coelhos: <span></span><br>
+        Total de ratos: <span></span><br>Percentual de coelhos: <span></span><br>Percentual de ratos: <span></span></p>
     
 </body>
