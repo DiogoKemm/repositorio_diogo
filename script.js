@@ -40,3 +40,16 @@ function cobaias() {
 
 console.log(cobaias());
 
+function quadrado() {
+    let i;
+    let teste;
+    for(i = 0; i <= 100; i++) {
+        if (i % 2 == 0) {
+            teste = i * 2;
+            console.log(teste);
+        }
+    }
+}
+
+quadrado();
+
